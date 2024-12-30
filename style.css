@@ -1,0 +1,16 @@
+body {
+  background: lightgoldenrodyellow;
+}
+
+.night {
+  --alpha: calc(var(--daytime) - 0.1);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: hsla(240, 100%, 7%, var(--alpha));
+}
+
+canvas {
+  border-radius: 50%;
+  cursor: pointer;
+}
